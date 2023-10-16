@@ -19188,9 +19188,9 @@ footer i.fa {
 
 @media (max-width: 450px) {
   .copyright_sm {
-    width: 70% !important;
+    width: 100% !important;
     position: relative;
-    margin-left: 60px;
+    margin-left: 5px;
   }
   img.d-block.d-sm-none.copyright_sm {max-width: 30px;}
 
