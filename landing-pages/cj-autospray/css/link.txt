@@ -1,0 +1,6 @@
+Project Name        = CJ Auto Spray
+Current Website URL = https://cjautospray.co.nz/
+Site Map            = Home / Services / Contact Us 
+Color               = Red
+Logo                = Yes
+Project URL         = https://vishwa.vercel.app/
