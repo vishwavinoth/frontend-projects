@@ -44,10 +44,8 @@ html {
 
 body {
     max-width: 100%;
-    min-height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     font-family: var(--font-mona-sans);
-    color: #ffff;
 }
 
 .h1,
