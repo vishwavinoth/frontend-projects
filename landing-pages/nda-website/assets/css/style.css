@@ -40,6 +40,8 @@
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: fit-content;
+    background-color: #030E29;
 }
 
 body {
