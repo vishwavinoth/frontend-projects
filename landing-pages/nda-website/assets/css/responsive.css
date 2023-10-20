@@ -10,12 +10,31 @@
     .card_block_inner {
         width: auto;
         height: 255px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 0;
 
     }
 
     .group-child {
-        width: auto;
+        width: fit-content;
         height: 380px;
+    }
+
+    .form_sign_up {
+        position: relative;
+        width: 448px;
+        height: 495px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
     }
 
     .coin_group {
@@ -32,7 +51,7 @@
         left: 15px;
     }
 
-  
+
 
     .fc_box_card {
         width: 360px;
@@ -48,6 +67,7 @@
         right: 0;
         top: 0;
     }
+
     .fc_box_card .c-details_new {
         margin-left: 0px;
     }
@@ -55,6 +75,12 @@
 
 /* LG Device (min-width: 992px) and (max-width: 1199px) */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .row.block-ibox {
+        position: relative;
+        left: 0;
+        display: contents;
+    }
+
     .group_text {
         display: flex;
         flex-wrap: wrap;
@@ -81,10 +107,103 @@
     .hamburger-lines {
         display: none;
     }
+
+    .fc_box_card {
+        width: -webkit-fill-available;
+        height: 100%;
+        border-radius: var(--br-11xl);
+        background: var(--color-white);
+        box-shadow: -12px -12px 28px rgba(216, 214, 214, 0.25), 12px 12px 28px rgba(216, 214, 214, 0.25);
+        border: 1px solid var(--color-gray-400);
+        box-sizing: border-box;
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
 }
 
 /* MD Device (min-width: 768px) and (max-width: 991px) */
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .row.block-ibox {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .fc_box_card {
+        width: 666px;
+        margin: auto;
+        border-radius: var(--br-11xl);
+        background: var(--color-white);
+        box-shadow: -12px -12px 28px rgba(216, 214, 214, 0.25), 12px 12px 28px rgba(216, 214, 214, 0.25);
+        border: 1px solid var(--color-gray-400);
+        box-sizing: border-box;
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .trade_graph {
+        width: 729px;
+    }
+
+    .card_gap {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        z-index: 9;
+        background: #030E29;
+    }
+
+    section.sign_up_block {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        background: #030E29;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding: 50px 0 100px;
+        top: 506px;
+    }
+
+
+
+    .custom_con_1 {
+        position: relative;
+        top: 600px;
+    }
+
+    .fc_box_card {
+        width: 666px;
+        display: grid;
+        margin: auto;
+        border-radius: var(--br-11xl);
+        background: var(--color-white);
+        box-shadow: -12px -12px 28px rgba(216, 214, 214, 0.25), 12px 12px 28px rgba(216, 214, 214, 0.25);
+        border: 1px solid var(--color-gray-400);
+        box-sizing: border-box;
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        justify-items: stretch;
+        justify-content: space-between;
+    }
+
+}
 
 /* SM Small Device (min-width: 576px) and (max-width: 767px) */
 @media screen and (min-width: 576px) and (max-width: 767px) {}
@@ -102,13 +221,7 @@
 @media only screen and (max-width: 420px) {}
 
 /* Mobile (max-width: 395px) */
-@media only screen and (max-width: 395px) {
-    body {
-        width: 400px;
-        margin: 0 auto;
-        font-family: var(--font-mona-sans);
-    }
-}
+@media only screen and (max-width: 395px) {}
 
 /* Extra small Device (max-width: 767px) */
 @media screen and (max-width: 767px) {
@@ -245,7 +358,7 @@
     }
 
     .container.futures_cards {
-        max-width: 100%;
+        width: max-content;
     }
 
     .row.block-ibox {
@@ -292,13 +405,37 @@
         margin: 0;
         position: relative;
         z-index: 9999;
+        background: #030E29;
+    }
+
+    section.hero_section {
+        display: grid;
+        width: 441px;
+        height: 100%;
+        background: #030E29;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+    }
+
+    section.sign_up_block {
+        display: grid;
+        width: 441px;
+        height: 100%;
+        background: #030E29;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding: 50px 0 100px;
     }
 
     .card_block_inner {
         padding-top: 10px;
         margin-bottom: 20px;
         width: 380px;
-        height: 400px;
+        height: 460px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -459,7 +596,87 @@
         margin-left: 0px;
 
     }
-    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+
+    .row.stepper_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 441px;
+    }
+
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
         position: relative;
         width: 100%;
         min-height: 1px;
