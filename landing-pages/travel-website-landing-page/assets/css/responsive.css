@@ -1,0 +1,88 @@
+/* Media query for iPhone 6/7/8 Plus */
+@media (min-width: 414px) and (max-width: 736px) {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between !important;
+        align-content: center;
+        gap: 10px !important;
+    }
+
+    .button-child {
+        width: fit-content;
+        padding: 5px 8px !important;
+        border-radius: var(--br-8xs);
+        border: 1px solid var(--st1);
+        box-sizing: border-box;
+    }
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .header-main {
+        margin: auto;
+        width: -webkit-fill-available;
+        background-color: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(8px);
+    }
+}
+
+/* Custom Media query */
+@media (max-width: 414px) {
+    .nav_link_extra {
+        display: none;
+    }
+}
+
+/* Custom Media query */
+@media (max-width: 340px) {
+    .sign_up {
+        display: none;
+    }
+}
+
+/* Media query for LG Devices*/
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 45px;
+        max-width: fit-content;
+        width: auto;
+        margin-right: 90px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        gap: 45px;
+    }
+
+    .header-main {
+        padding: 20px 0;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(8px);
+    }
+}
